@@ -6,24 +6,18 @@
 		"technologies": ["SvelteKit", "Tailwind CSS", "GitHub API", "Vercel"],
 		"imgURL": "/projects/readme.png",
 		"githubURL": "https://github.com/f-llewellyn/read.me",
-		"previewURL": "https://read-me-murex.vercel.app/"
+		"previewURL": "https://read-me-murex.vercel.app/",
+		"image": "readme.png"
 	},
 	{
 		"title": "JobFair",
 		"tag": "Don't get mugged off!",
 		"content": "JobFair is a prograssive web app (PWA) that aims to allow young people to find reliable and secure employment without fear of being taken advantage of.",
-		"technologies": [
-			"Vue",
-			"Node.js",
-			"Express",
-			"MongoDB",
-			"Vite",
-			"PWA",
-			"Heroku"
-		],
+		"technologies": ["Vue", "Express", "MongoDB", "Vite", "PWA", "Heroku"],
 		"imgURL": "/projects/jobfair-home.png",
 		"githubURL": "https://github.com/f-llewellyn/jobfair",
-		"previewURL": "https://jobfair-fl.herokuapp.com/"
+		"previewURL": "https://jobfair-fl.herokuapp.com/",
+		"image": "jobfair-home.png"
 	},
 	{
 		"title": "Hasland Magazine",
@@ -32,6 +26,7 @@
 		"technologies": ["HTML", "BootStrap CSS", "JavaScript", "Netlify"],
 		"imgURL": "/projects/hasland-magazine.png",
 		"githubURL": "https://github.com/f-llewellyn/hasland-magazine",
-		"previewURL": "https://haslandmagazine.co.uk/"
+		"previewURL": "https://haslandmagazine.co.uk/",
+		"image": "hasland-magazine.png"
 	}
 ]

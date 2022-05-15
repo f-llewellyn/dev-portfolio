@@ -166,6 +166,7 @@ a {
 .project {
 	margin: 2rem 0;
 	display: flex;
+	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
 	position: relative;
@@ -186,7 +187,7 @@ a {
 	position: absolute;
 	inset: 0;
 	background-color: var(--primary-400);
-	opacity: 0.6;
+	opacity: 0.8;
 	z-index: 1;
 }
 
@@ -231,6 +232,7 @@ a {
 	list-style: none;
 	display: flex;
 	gap: 1rem;
+	max-width: 70%;
 }
 
 .project__links {
@@ -238,5 +240,16 @@ a {
 	gap: 1rem;
 	font-size: 30px;
 	margin-top: 1rem;
+}
+
+.project__container .project:nth-child(even) {
+	flex-direction: row-reverse;
+	/* background-color: red; */
+}
+
+.project__container .project:nth-child(even) .project__info {
+	align-items: flex-start;
+	text-align: left;
+	left: 0;
 }
 

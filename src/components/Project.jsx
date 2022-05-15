@@ -1,42 +1,42 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
-const Project = (props) => {
+const Project = ({ data }) => {
 	return (
-		<div className="project flex">
+		<div className="project">
 			<a
-				href="https://read-me-murex.vercel.app"
+				href={data.previewURL}
 				target="_"
 				className="img__container transition"
 			>
 				<img
 					className="project__img"
-					src="/projects/readme.png"
+					src={`/projects/${data.image}`}
 					alt=""
 				/>
 				<div className="img__overlay transition"></div>
 			</a>
 			<div className="project__info text-right">
 				<div className="project__rule"></div>
-				<h1 className="project__title">read.me</h1>
-				<p className="project__tag">Write a README like a pro!</p>
+				<h1 className="project__title">{data.title}</h1>
+				<p className="project__tag">{data.tag}</p>
 				<div className="project__card">
-					<p>
-						Read.me is a web app that enables users to create
-						awesome READMEs for their open-source projects with an
-						editor, live preview and pre-made markdown elements.
-					</p>
+					<p>{data.content}</p>
 				</div>
 				<ul className="project__tech">
-					<li className="tech__item">SvelteKit</li>
-					<li className="tech__item">Tailwind CSS</li>
+					{data.technologies.map((tech, index) => (
+						<li key={index} className="tech__item">
+							{tech}
+						</li>
+					))}
+					{/* <li className="tech__item">Tailwind CSS</li>
 					<li className="tech__item">GitHub API</li>
-					<li className="tech__item">Vercel</li>
+					<li className="tech__item">Vercel</li> */}
 				</ul>
 				<div className="project__links">
-					<a href="https://github.com/f-llewellyn/read.me">
+					<a href={data.previewURL} target="_">
 						<FaExternalLinkAlt />
 					</a>
-					<a href="https://github.com/f-llewellyn/read.me">
+					<a href={data.githubURL} target="_">
 						<FaGithub />
 					</a>
 				</div>
