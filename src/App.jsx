@@ -3,6 +3,8 @@ import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Project from "./components/Project";
+import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
 	const [data, setData] = useState([]);
@@ -27,6 +29,10 @@ function App() {
 						<Project key={index} data={project} />
 					))}
 				</div>
+				<h1 className="title">About Me</h1>
+				<About />
+				<h1 className="title">Contact</h1>
+				<Contact />
 
 				{/* <p>{data.content}</p> */}
 				{/* <button onClick={console.log(data)}>Data</button> */}
