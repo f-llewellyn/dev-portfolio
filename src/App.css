@@ -35,6 +35,10 @@ a {
 	text-decoration: none;
 }
 
+p {
+	font-size: 24px;
+}
+
 /* UTILIY */
 .container {
 	padding: 30px 25px;
@@ -321,3 +325,7 @@ a {
 	margin-top: 2rem;
 }
 
+.contact__text {
+	margin-top: 1rem;
+	width: 50%;
+}
