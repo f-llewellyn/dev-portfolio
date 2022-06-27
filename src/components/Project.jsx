@@ -29,7 +29,7 @@ const Project = ({ data }) => {
 						</li>
 					))}
 					{/* <li className="tech__item">Tailwind CSS</li>
-					<li className="tech__item">GitHub API</li>
+						<li className="tech__item">GitHub API</li>
 					<li className="tech__item">Vercel</li> */}
 				</ul>
 				<div className="project__links">
@@ -40,6 +40,8 @@ const Project = ({ data }) => {
 						<FaGithub />
 					</a>
 				</div>
+
+				{/* <div className="project__details"></div> */}
 			</div>
 		</div>
 	);

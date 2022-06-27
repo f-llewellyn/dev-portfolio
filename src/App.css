@@ -23,6 +23,7 @@
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
 	scroll-behavior: smooth;
+	/* outline: 1px solid red; */
 }
 
 body {
@@ -248,6 +249,8 @@ p {
 	display: flex;
 	gap: 1rem;
 	max-width: 70%;
+	margin-left: auto;
+	margin-right: -1rem;
 }
 
 .project__links {
@@ -255,6 +258,7 @@ p {
 	gap: 1rem;
 	font-size: 30px;
 	margin-top: 1rem;
+	justify-content: flex-end;
 }
 
 .project__links a:hover {
@@ -363,5 +367,128 @@ p {
 	width: 3px;
 	height: 75px;
 	background-color: var(--primary-400);
+}
+
+@media (max-width: 1500px) {
+	.nav {
+		padding: 20px 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	p {
+		font-size: inherit;
+	}
+
+	.title {
+		width: 100%;
+	}
+
+	.nav__item {
+		font-size: 20px;
+	}
+
+	.nav__btn {
+		display: none;
+	}
+
+	.hero {
+		padding: 0;
+		inset: 0;
+		left: -4px;
+		width: 103%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.hero__title {
+		font-size: 50px;
+		margin-bottom: 10px;
+	}
+
+	.hero__sub {
+		font-size: 18px;
+		margin: 0;
+	}
+
+	.container {
+		padding: 0 5px;
+	}
+
+	.content-container {
+		padding: 0;
+	}
+
+	.project {
+		flex-direction: column-reverse !important;
+	}
+
+	.project__details {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		z-index: 2;
+		margin: 0 auto;
+		bottom: -350%;
+	}
+
+	.project__card {
+		font-size: 14px;
+		width: 100%;
+	}
+
+	.img__container {
+		width: 100%;
+	}
+
+	.project__info {
+		position: relative;
+		width: 100%;
+		text-align: center;
+	}
+
+	.project__tech {
+		max-width: 100%;
+		margin: 0 auto;
+		font-size: 12px;
+	}
+
+	.project__links {
+		margin: 10px auto;
+	}
+
+	.about__container {
+		flex-direction: column;
+	}
+
+	.--two {
+		margin-top: 0;
+		flex-direction: column-reverse;
+	}
+
+	.about__container img {
+		width: 60%;
+		margin: 10px auto;
+	}
+
+	.about__text {
+		max-width: 100%;
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.contact__text {
+		width: 100%;
+	}
+
+	.contact__inputs {
+		flex-direction: column;
+	}
+
+	.socials {
+		position: absolute;
+	}
 }
 
