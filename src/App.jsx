@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Project from "./components/Project";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Socials from "./components/Socials";
 
 function App() {
 	const [data, setData] = useState([]);
@@ -23,19 +24,23 @@ function App() {
 			<Header />
 			<Hero />
 			<div className="content-container">
-				<h1 className="title">Projects</h1>
+				<h1 id="projects" className="title">
+					Projects
+				</h1>
 				<div className="project__container">
 					{data.map((project, index) => (
 						<Project key={index} data={project} />
 					))}
 				</div>
-				<h1 className="title">About Me</h1>
+				<h1 id="about" className="title">
+					About Me
+				</h1>
 				<About />
-				<h1 className="title">Contact</h1>
+				<h1 id="contact" className="title">
+					Contact
+				</h1>
 				<Contact />
-
-				{/* <p>{data.content}</p> */}
-				{/* <button onClick={console.log(data)}>Data</button> */}
+				<Socials />
 			</div>
 		</div>
 	);

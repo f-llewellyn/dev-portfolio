@@ -2,13 +2,13 @@ const Header = () => {
 	return (
 		<nav className="nav">
 			<ul className="nav__list">
-				<a href="/">
+				<a href="#projects">
 					<li className="nav__item transition raise">Projects</li>
 				</a>
-				<a href="/">
+				<a href="#about">
 					<li className="nav__item transition raise">About Me</li>
 				</a>
-				<a href="/">
+				<a href="#contact">
 					<li className="nav__item transition raise">Contact</li>
 				</a>
 			</ul>

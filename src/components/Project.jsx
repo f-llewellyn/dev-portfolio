@@ -33,10 +33,10 @@ const Project = ({ data }) => {
 					<li className="tech__item">Vercel</li> */}
 				</ul>
 				<div className="project__links">
-					<a href={data.previewURL} target="_">
+					<a href={data.previewURL} className="transition" target="_">
 						<FaExternalLinkAlt />
 					</a>
-					<a href={data.githubURL} target="_">
+					<a href={data.githubURL} className="transition" target="_">
 						<FaGithub />
 					</a>
 				</div>
