@@ -401,17 +401,7 @@ p {
 	}
 
 	.project {
-		flex-direction: column-reverse !important;
-	}
-
-	.project__details {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		position: absolute;
-		z-index: 2;
-		margin: 0 auto;
-		bottom: -350%;
+		flex-direction: column !important;
 	}
 
 	.project__card {
@@ -427,6 +417,7 @@ p {
 		position: relative;
 		width: 100%;
 		text-align: center;
+		margin-top: 1rem;
 	}
 
 	.project__tech {
